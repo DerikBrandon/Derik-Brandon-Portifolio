@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de um desenvolvedor web, especializado em criar experiências incríveis na web.">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <!-- Adicionando o link para o Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Bem-vindo ao Meu Portfólio</h1>
+        <p>Desenvolvedor Web | Pythonista | Criador de Conteúdo</p>
+    </section>
+
+    <section id="about">
+        <h2><i class="fas fa-user"></i> Sobre Mim</h2>
+        <p>Olá! Eu sou Derik Brandon, estudante de Ciência da Computação na Unimax e um entusiasta do desenvolvimento web. Com um forte interesse em criar soluções tecnológicas inovadoras, minha paixão é transformar conceitos em experiências digitais excepcionais.
+
+            Minhas Qualidades
+            Criatividade e Inovação: Tenho um olhar atento para detalhes e um desejo constante de explorar novas abordagens, garantindo que cada projeto não apenas atenda, mas supere as expectativas.
+            
+            Habilidade Técnica: Sou proficiente em uma variedade de tecnologias web e linguagens de programação, incluindo HTML, CSS, JavaScript, e frameworks modernos. Minha formação acadêmica e projetos práticos me permitem resolver problemas complexos com soluções eficazes.
+            
+            Foco no Usuário: Minha abordagem centrada no usuário assegura que as soluções que desenvolvo são não apenas funcionais, mas também intuitivas e agradáveis de usar.
+            
+            Trabalho em Equipe e Comunicação: Tenho experiência em colaborar com outros desenvolvedores e designers para criar projetos coesos e bem-sucedidos. Valorizo a comunicação aberta e a troca de ideias para alcançar os melhores resultados.
+            
+            Aprendizado Contínuo: Estou sempre buscando aprender e me atualizar sobre as últimas tendências e tecnologias no mundo do desenvolvimento web para oferecer as melhores práticas e soluções atuais.
+            
+            Estou entusiasmado para aplicar meus conhecimentos e habilidades em projetos desafiadores e contribuir para criar experiências web que encantem e impactem positivamente os usuários. Vamos conectar e explorar como posso ajudar a transformar suas ideias em realidade!</p>
+    </section>
+
+    <section id="projects">
+        <h2>Meus Projetos</h2>
+        <div class="project">
+            <h3>Carrinho Autônomo</h3>
+            <p>Descrição Geral: O carrinho autônomo é um projeto educativo e tecnológico desenvolvido com a plataforma Arduino, destinado a demonstrar e explorar os conceitos de robótica e automação. Equipado com uma série de sensores e atuadores, o carrinho é capaz de navegar de forma autônoma em um ambiente controlado, seguindo linhas, evitando obstáculos e realizando outras tarefas programadas.</p>
+        </div>
+        <div class="project">
+            <h3>Mão Biônica</h3>
+            <p>Descrição Geral: Descrição Geral
+                A mão biônica é um dispositivo inovador desenvolvido com impressão 3D, projetado para oferecer controle preciso dos movimentos dos dedos via Bluetooth a partir de um celular. Através de uma interface intuitiva, cada comando enviado corresponde a um número específico de 0 a 5, permitindo a manipulação individual dos dedos da mão biônica. O comando "0" fecha todos os dedos simultaneamente, proporcionando uma ampla gama de movimentos e funções.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <form action="/send_message" method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Todos os direitos reservados.</p>
+        <p>&copy; 2024 Derik Brandon.</p> 
+    </footer>
+</body>
+</html>
