@@ -3,18 +3,19 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #ebebeb;
-    background-image: url('../img/imgg.jpg');
-    background-size: cover;
-    background-repeat: repeat;
+    background-color: #ebebeb; /* Cor de fundo de fallback */
+    background-image: url('../img/imgg.jpg'); /* Caminho relativo */
+    background-size: cover; /* Ajusta a textura para cobrir toda a área do fundo */
+    background-repeat: repeat; /* Faz a textura se repetir se não cobrir toda a área */
     color: #000000;
 }
 
 .logo {
     display: flex;
     color: white;
-    font-size: 24px;
-    margin-right: 20px;
+    font-size: 24px; /* Tamanho do texto do logo */
+    margin-right: 20px; /* Faz com que o logo fique à esquerda */
+
 }
 
 body {
@@ -23,18 +24,19 @@ body {
 
 .navbar {
     display: flex;
-    align-items: center;
-    background-color: #000000; 
+    align-items: center; /* Alinha itens verticalmente */
+    background-color: #000000; /* Altere conforme necessário */
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo img {
-    height: 40px;
+    height: 40px; /* Ajuste a altura do logo */
 }
 
+
 nav {
-    margin-left: 300px;
+    margin-left: 300px; /* Faz o nav se afastar do logo */
 }
 
 nav ul {
@@ -45,23 +47,24 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin-left: 20px; /* Espaço entre os itens */
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #333; 
+    color: #333; /* Altere a cor conforme necessário */
 }
 
+
 .img-animada {
-    border: 5px solid #6b726b;
-    border-radius: 40px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
+    border: 5px solid #6b726b; /* Cor da borda */
+    border-radius: 40px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transição suave para animação */
 }
 .img-animada:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+    transform: scale(1.05); /* Aumenta a imagem em 5% ao passar o mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8); /* Aumenta a sombra ao passar o mouse */
 }
 
 .img-animada {
@@ -73,25 +76,26 @@ nav ul li a {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-10px);
+        transform: translateY(-10px); /* Ajuste a altura do movimento aqui */
     }
 }
 
+
 .portfolio {
-    text-align: center;
+    text-align: center; /* Centraliza o texto */
     margin-left: 130px;
 }
 
 .portfolio h1 {
-    font-size: 2em;
-    margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 2em; /* Tamanho da fonte do título */
+    margin: 0; /* Remove margem padrão */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra do texto */
 }
 
 .portfolio p {
-    font-size: 1.2em;
-    color: #666;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    font-size: 1.2em; /* Tamanho da fonte do parágrafo */
+    color: #666; /* Cor do texto */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Sombra do texto */
 }
 
 #about {
@@ -101,12 +105,12 @@ nav ul li a {
     max-width: 800px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s; /* Transições suaves */
 }
 
 #about:hover {
-    transform: scale(1.02);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02); /* Leve aumento ao passar o mouse */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
 }
 
 #about h2 {
@@ -122,11 +126,11 @@ nav ul li a {
     color: #555;
     margin-bottom: 20px;
     text-align: justify;
-    transition: color 0.3s;
+    transition: color 0.3s; /* Transição para a cor do texto */
 }
 
 #about p:hover {
-    color: #1dc0e9;
+    color: #1dc0e9; /* Muda a cor do texto ao passar o mouse */
 }
 
 #about ul {
@@ -140,12 +144,12 @@ nav ul li a {
     border-radius: 4px;
     margin-bottom: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, transform 0.3s;
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
 }
 
 #about li:hover {
-    background-color: #e6f7ff;
-    transform: translateY(-2px);
+    background-color: #e6f7ff; /* Muda a cor de fundo ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
 }
 
 #about li::before {
@@ -153,11 +157,15 @@ nav ul li a {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     color: #1dc0e9;
+    margin-right: 10px;
 }
+
+
 
 header {
     background-color: #000000;
     color: #ecf0f1;
+    
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -214,42 +222,46 @@ h3 {
     margin-bottom: 10px;
 }
 
+
+
 #about {
-    background-color: #f9f9f9;
-    padding: 40px 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9; /* Cor de fundo suave */
+    padding: 40px 20px; /* Espaçamento interno */
+    margin: 20px auto; /* Margem externa */
+    max-width: 800px; /* Largura máxima */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
 #about h2 {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
+    font-size: 2em; /* Tamanho do título */
+    color: #333; /* Cor do título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    text-align: center; /* Centraliza o título */
 }
 
 #about p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 20px;
-    text-align: justify;
+    font-size: 1.1em; /* Tamanho do texto */
+    line-height: 1.6; /* Altura da linha */
+    color: #555; /* Cor do texto */
+    margin-bottom: 20px; /* Espaço abaixo do parágrafo */
+    text-align: justify; /* Justifica o texto */
 }
 
+/* Estilo para as listas de qualidades */
 #about ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Remove marcadores */
+    padding: 0; /* Remove padding */
 }
 
 #about li {
-    background-color: #cccccc;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #cccccc; /* Cor de fundo branca */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 4px; /* Bordas arredondadas */
+    margin-bottom: 10px; /* Espaço entre itens */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra */
 }
+
 
 .project {
     background-color: #f3f3f3;
@@ -265,63 +277,65 @@ h3 {
     transform: translateY(-5px);
 }
 
+/* Estilo para a seção de contato */
 #contact {
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Cor de fundo suave para a seção */
     padding: 10px 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
-    max-width: 500px;
+    max-width: 500px; /* Largura máxima para a seção */
 }
 
 #contact h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #333;
-    text-align: center;
+    color: #333; /* Cor escura para o título */
+    text-align: center; /* Centralizar o título */
 }
 
 #contact form {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: column; /* Organizar os itens em coluna */
+    gap: 15px; /* Espaçamento entre os itens */
 }
 
 #contact label {
     font-size: 1.1em;
-    color: #555;
-    margin-bottom: 5px;
+    color: #555; /* Cor das labels */
+    margin-bottom: 5px; /* Espaçamento abaixo das labels */
 }
 
 #contact input, #contact textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #ddd; /* Borda leve */
     border-radius: 4px;
     font-size: 1em;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
 #contact textarea {
-    height: 100px;
-    resize: vertical;
+    height: 100px; /* Altura padrão para o textarea */
+    resize: vertical; /* Permitir redimensionamento apenas vertical */
 }
 
 #contact button {
-    background-color: #000000;
-    color: #f0f0f0;
+    background-color: #000000; /* Cor de fundo azul */
+    color: #f0f0f0; /* Cor do texto */
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     font-size: 1.1em;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
+    transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
 }
 
 #contact button:hover {
-    background-color: #00b9e7;
-    transform: scale(1.05);
+    background-color: #00b9e7; /* Cor mais escura no hover */
+    transform: scale(1.05); /* Leve aumento no botão ao passar o mouse */
 }
+
 
 footer {
     text-align: center;
